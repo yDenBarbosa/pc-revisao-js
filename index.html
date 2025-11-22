@@ -7,30 +7,13 @@
 </head>
 <body>
     <h1>manipulação de eventos</h1>
-    <!-- evento adicionado diretamente no HTML -->
-    <button onclick="alert('você clicou!')">click aqui</button>
-    <button id="btn">click e o js roda</button>
-    <form id="fomr">
-        <button type="submit">click com submit</button>
-    </form>
+    <div id="box" style="width: 150px; height: 150px; background-color: aqua;"></div>
     <script>
-        // let botao = document.getElementById("btn")
-        // botao.onclick = () => {
-        //     alert(2 + "bazinga!")
-        // }
+        let element = document.getElementById("box")
 
-        let btn = document.getElementById("btn")
-
-        document.getElementById("form").addEventListener
-        ("submit", (e) =>{
-            e.preventDefault()
-            console.log("test"); 
+        element.addEventListener("mouseover", () => {
+            element.style.backgroundColor = "red"
         })
-
-        document.addEventListener("click", () => {
-            alert("Botão foi clicado!")
-        })
-
     </script>
 </body>
 </html>
