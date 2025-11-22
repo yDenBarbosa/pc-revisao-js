@@ -9,7 +9,7 @@
 // console.log(chocolate);
 // console.log(desconto);
 
-function ValidaDesconto(valorCompra) {
+function calcularDesconto(valorCompra) {
     let desconto = 0 // variavel de escopo
 
     if (valorCompra >= 100) {
@@ -25,6 +25,6 @@ function ValidaDesconto(valorCompra) {
     }
 }
 
-console.log(ValidaDesconto(1200));
+console.log(calcularDesconto(1200));
 
 
